@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-* {
+*{
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
     padding: 0;
-    margin: 0;
 }
 
-body {
+body{
     background-color: #0b0c0c;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Kaydırma çubuklarını kaldırır */
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
 }
 
-header {
+header{
     padding: 0;
+    height: 300px;
     height: 100px;
     width: 100%;
     display: flex;
@@ -30,85 +30,88 @@ header {
     background-color: #0b0c0c;
 }
 
-.header-left, .header-right {
+
+
+.header-left{
+    margin-left: 200px;
     display: flex;
+    text-align: center;
     align-items: center;
 }
 
-.header-left {
-    margin-left: 20px;
+
+.header-right{
+    display: flex;
+    margin-right: 200px;
 }
 
-.header-right {
-    margin-right: 20px;
-}
+.header-text{
 
-.header-text {
     width: 100px;
     opacity: 1 !important;
     cursor: pointer;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Alt çizgi olmadan */
     position: relative;
 }
 
 header a {
-    text-decoration: none;
+    text-decoration:none;
     text-align: center;
-    color: white;
+    color:white;   
 }
-
-a {
+ 
+a{
     text-decoration: none;
     color: white;
 }
 
-main .me {
-    margin-top: 50px;
+main .me{
+    margin-left: 100px;
+    margin-top: 100px;
     align-items: center;
     text-align: center;
-    height: 300px;
+    height: 400px;
     width: 300px;
     display: flex;
     user-select: none;
     border-radius: 400px;
 }
 
-.mainin-maini {
+.mainin-maini{
     width: 100%;
-    height: auto;
+    height: 750px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #1C1C1C;
-    padding: 40px 20px;
-    box-sizing: border-box;
+    min-height: 500px;
 }
 
-.ben-kimim {
+.ben-kimim{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 110px;
     width: 500px;
-    font-size: 1.2rem;
+    font-size: x-large;
     color: white;
-    padding: 0 20px;
 }
+
 
 footer {
     height: 200px;
     background-color: #0b0c0c;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center; /* Yatayda ortalama */
+    flex-direction: column; /* Alt alta yerleştirme */
+    justify-content: center; /* Dikeyde ortalama */
     color: white;
+    padding: 0;
     width: 100%;
-    padding: 20px;
 }
 
-.social-media-footer {
+.social-media-footer{
     font-size: 30px;
 }
 
 .footer-text {
-    margin: 5px 0;
+    margin: 0px 0; /* Elemanlar arasında dikey boşluk */
 }
