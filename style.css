@@ -112,35 +112,3 @@ footer {
 .footer-text {
     margin: 5px 0;
 }
-
-/* Mobile Responsive Styles */
-@media only screen and (max-width: 768px) {
-    header {
-        height: 70px;
-    }
-
-    .header-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .mainin-maini {
-        flex-direction: column;
-    }
-
-    .image {
-        margin-bottom: 20px;
-    }
-
-    .ben-kimim {
-        width: 80%;
-    }
-
-    .footer {
-        height: auto;
-    }
-
-    .social-media-footer {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-}
